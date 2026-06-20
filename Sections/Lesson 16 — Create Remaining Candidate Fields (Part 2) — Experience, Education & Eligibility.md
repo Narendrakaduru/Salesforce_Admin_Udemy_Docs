@@ -48,7 +48,9 @@ Setup → Schema Builder → Candidate Object
 
 ### Candidate Object — Final Field Specification
 
-Candidate Information (comprising Lesson 14 & Lesson 16):
+Below is the complete field specification for the Candidate object. The contact and address fields are created in [Lesson 14 — Create Candidate Custom Object](Lesson%2014%20—%20Create%20Candidate%20Custom%20Object%20%28Recruiting%20Application%29.md#steps--process--create-initial-candidate-fields-part-1), while the qualification and eligibility fields are created in this lesson.
+
+Candidate Information:
 
 | Field Name | Data Type | Purpose / Description |
 | --- | --- | --- |

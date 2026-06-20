@@ -51,16 +51,11 @@ Gear Icon → Setup → Object Manager → Create → Custom Object
 - **Candidate Object** stores information about the people applying for those openings.
 
 **Examples of information that will be stored:**
-- First Name
-- Last Name
-- Phone Number
-- Email
-- Address
-- Experience
-- Education
-- Employment Status
-- Citizenship
-- Visa Requirement
+- First Name, Last Name, Phone, Email, and Address (created in [Part 1 below](#steps--process--create-initial-candidate-fields-part-1))
+- Experience, Education, Employment Status, Citizenship, and Visa Requirement (created in [Lesson 16](Lesson%2016%20—%20Create%20Remaining%20Candidate%20Fields%20%28Part%202%29%20—%20Experience,%20Education%20&%20Eligibility.md))
+
+> [!NOTE]
+> For the complete Candidate database schema, see the [Candidate Object — Final Field Specification](Lesson%2016%20—%20Create%20Remaining%20Candidate%20Fields%20%28Part%202%29%20—%20Experience,%20Education%20&%20Eligibility.md#candidate-object--final-field-specification) in Lesson 16.
 
 This information will later be related to job positions using object relationships.
 
@@ -208,6 +203,101 @@ The record is saved with `Candidate ID = C-002` (Auto Number increments automati
 
 ---
 
+## Steps / Process — Create Initial Candidate Fields (Part 1)
+
+After creating the Candidate Custom Object, we need to create its initial contact and address fields.
+
+**Navigation Path:**
+```
+Setup → Object Manager → Candidate → Fields & Relationships → New
+```
+
+---
+
+### Step 8 — Create First Name Field
+1. Go to **Fields & Relationships** and click **New**.
+2. Select **Text** as the data type and click **Next**.
+3. Configure settings:
+   - **Field Label:** `First Name`
+   - **Length:** `50`
+4. Click **Next** on Profile Security (keep defaults).
+5. Click **Next** on Page Layout (keep defaults).
+6. Click **Save & New**.
+
+---
+
+### Step 9 — Create Last Name Field
+1. Select **Text** as the data type and click **Next**.
+2. Configure settings:
+   - **Field Label:** `Last Name`
+   - **Length:** `50`
+   - **Required:** Check this box (Last name is required for a candidate).
+3. Click **Next**, keep defaults, click **Next**, and click **Save & New**.
+
+---
+
+### Step 10 — Create Phone Field
+1. Select **Phone** as the data type and click **Next**.
+2. Configure settings:
+   - **Field Label:** `Phone`
+3. Click **Next**, keep defaults, click **Next**, and click **Save & New**.
+
+---
+
+### Step 11 — Create Email Field
+1. Select **Email** as the data type and click **Next**.
+2. Configure settings:
+   - **Field Label:** `Email`
+3. Click **Next**, keep defaults, click **Next**, and click **Save & New**.
+
+---
+
+### Step 12 — Create Street Field
+1. Select **Text** as the data type and click **Next**.
+2. Configure settings:
+   - **Field Label:** `Street`
+   - **Length:** `50`
+3. Click **Next**, keep defaults, click **Next**, and click **Save & New**.
+
+---
+
+### Step 13 — Create City Field
+1. Select **Text** as the data type and click **Next**.
+2. Configure settings:
+   - **Field Label:** `City`
+   - **Length:** `50`
+3. Click **Next**, keep defaults, click **Next**, and click **Save & New**.
+
+---
+
+### Step 14 — Create State Field
+1. Select **Picklist** as the data type and click **Next**.
+2. Configure settings:
+   - **Field Label:** `State`
+   - Select **Enter values, with each value separated by a new line**.
+   - Enter standard state abbreviation values (e.g., `CA`, `NY`, `TX`, `FL`, `IL`, `WA`, `MA`, `GA`).
+3. Click **Next**, keep defaults, click **Next**, and click **Save & New**.
+
+---
+
+### Step 15 — Create Postal Code Field
+1. Select **Text** as the data type and click **Next**.
+2. Configure settings:
+   - **Field Label:** `Postal Code`
+   - **Length:** `15`
+3. Click **Next**, keep defaults, click **Next**, and click **Save & New**.
+
+---
+
+### Step 16 — Create Country Field
+1. Select **Text** as the data type and click **Next**.
+2. Configure settings:
+   - **Field Label:** `Country`
+   - **Length:** `20`
+3. Click **Next**, keep defaults, click **Next**, and click **Save**.
+
+---
+
 ## Navigation — Change Candidate Tab Order
 
 **Goal:**
@@ -239,14 +329,23 @@ graph TB
 
 ## Current Fields in Candidate Object
 
-| Field | Type |
-| --- | --- |
-| **Candidate ID** | Auto Number |
-| **Created By** | Standard (Audit) |
-| **Owner** | Standard (Audit) |
-| **Last Modified By** | Standard (Audit) |
+| **Field** | **Type** | **Description** |
+| --- | --- | --- |
+| **Candidate ID** | Auto Number | System-generated record ID |
+| **First Name** | Text (50) | Candidate's given name |
+| **Last Name** | Text (50) | Candidate's family name (Required) |
+| **Phone** | Phone | Contact number |
+| **Email** | Email | Contact email |
+| **Street** | Text (50) | Address street |
+| **City** | Text (50) | Address city |
+| **State** | Picklist | Address state |
+| **Postal Code** | Text (15) | ZIP/postal code |
+| **Country** | Text (20) | Address country |
+| **Created By** | Standard (Audit) | Record creator |
+| **Owner** | Standard (Audit) | Record owner |
+| **Last Modified By** | Standard (Audit) | Last user to modify record |
 
-*(No business-specific fields have been added yet; they will be created in the next lesson).*
+*(These fields represent the initial contact and address details. Additional fields such as Experience, Education, and Eligibility are created in [Lesson 16](Lesson%2016%20—%20Create%20Remaining%20Candidate%20Fields%20%28Part%202%29%20—%20Experience,%20Education%20&%20Eligibility.md)).*
 
 ---
 
