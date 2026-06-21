@@ -36,6 +36,24 @@ Welcome to the comprehensive notes and study guide for the **Salesforce Certifie
 | **Lesson 26** | **Create Second Formula Field (Display Dynamic Status Icons)**<br>Using `CASE()`, `TEXT()`, and `IMAGE()` functions with Static Resources to render dynamic status indicators. | [View Lesson 26 Notes](Sections/Lesson%2026%20—%20Create%20Second%20Formula%20Field%20%28Display%20Dynamic%20Status%20Icons%29.md) |
 | **Lesson 27** | **Create Formula Field (Candidate Full Name)**<br>Text concatenation using the `&` operator to generate an automated full name field. | [View Lesson 27 Notes](Sections/Lesson%2027%20—%20Create%20Formula%20Field%20%28Candidate%20Full%20Name%29.md) |
 | **Lesson 28** | **Create Formula Field (Dynamic LinkedIn Profile Link Using Image)**<br>Generating clickable image hyperlinks dynamically using `HYPERLINK()` and `IMAGE()`. | [View Lesson 28 Notes](Sections/Lesson%2028%20—%20Create%20Formula%20Field%20%28Dynamic%20LinkedIn%20Profile%20Link%20Using%20Image%29.md) |
+| **Lesson 29** | **Introduction to Object Relationships in Salesforce**<br>Understanding why relationships are required, problems with independent objects vs. single large objects, and an overview of relationship types. | [View Lesson 29 Notes](Sections/Lesson%2029%20—%20Introduction%20to%20Object%20Relationships%20in%20Salesforce.md) |
+| **Lesson 30** | **Relationship Types in Salesforce (One-to-Many Relationship & Lookup Introduction)**<br>Deep dive into One-to-Many relationships, Parent and Child object architecture, and an introduction to the Lookup Relationship. | [View Lesson 30 Notes](Sections/Lesson%2030%20—%20Relationship%20Types%20in%20Salesforce%20%28One-to-Many%20Relationship%20&%20Lookup%20Introduction%29.md) |
+| **Lesson 31** | **Create First Lookup Relationship (Position → Hiring Manager)**<br>Step-by-step guide to creating a lookup relationship, defining Parent (User) and Child (Position), testing UI behavior, and visualizing with Schema Builder. | [View Lesson 31 Notes](Sections/Lesson%2031%20—%20Create%20First%20Lookup%20Relationship%20%28Position%20→%20Hiring%20Manager%29.md) |
+| **Lesson 32** | **Designing Relationships Using Job Application Object**<br>Understanding why a bridge object is needed to connect Candidate and Position, analyzing relationship types, and planning the data model architecture. | [View Lesson 32 Notes](Sections/Lesson%2032%20—%20Designing%20Relationships%20Using%20Job%20Application%20Object.md) |
+| **Lesson 33** | **Create Job Application Object & Build Relationships**<br>Step-by-step creation of the Job Application bridge object, adding Lookup relationships to Position and Candidate, and configuring application status picklists. | [View Lesson 33 Notes](Sections/Lesson%2033%20—%20Create%20Job%20Application%20Object%20&%20Build%20Relationships.md) |
+| **Lesson 34** | **Difference Between Master-Detail and Lookup Relationships**<br>Comprehensive comparison between Lookup (loose) and Master-Detail (strong) relationships, covering Roll-Up Summary limitations, ownership, and cascade delete behaviors. | [View Lesson 34 Notes](Sections/Lesson%2034%20—%20Difference%20Between%20Master-Detail%20and%20Lookup%20Relationships.md) |
+| **Lesson 35** | **Create Review Object and Establish Master-Detail Relationship**<br>Creating the Review object, adding Rating and Feedback fields, and building its Master-Detail relationship with Job Application. | [View Lesson 35 Notes](Sections/Lesson%2035%20—%20Create%20Review%20Object%20and%20Establish%20Master-Detail%20Relationship.md) |
+| **Lesson 36** | **Introduction to Roll-Up Summary Fields (Review → Job Application)**<br>Understanding how Roll-Up Summaries automatically calculate COUNT, SUM, MIN, and MAX from detail records, and why they only work with Master-Detail relationships. | [View Lesson 36 Notes](Sections/Lesson%2036%20—%20Introduction%20to%20Roll-Up%20Summary%20Fields%20%28Review%20→%20Job%20Application%29.md) |
+| **Lesson 37** | **Create Roll-Up Summary Field (Calculate Total Rating)**<br>Step-by-step guide to creating a Roll-Up Summary field using the SUM operation to automatically aggregate Review ratings on the Job Application object. | [View Lesson 37 Notes](Sections/Lesson%2037%20—%20Create%20Roll-Up%20Summary%20Field%20%28Calculate%20Total%20Rating%29.md) |
+
+
+
+
+
+
+
+
+
 
 ---
 
